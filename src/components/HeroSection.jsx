@@ -1,5 +1,3 @@
-// src/components/HeroSection.jsx
-// Exact recreation of CleverMellow style: vertical green glass columns, bottom-left headline, floating website card
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
 
@@ -13,7 +11,6 @@ const COLUMNS = [
   { opacity: 0.08, color: "rgba(10,12,10,0.9)" },
 ];
 
-// Floating card - like the website preview in CleverMellow
 const FloatingCard = () => (
   <motion.div
     initial={{ opacity: 0, scale: 0.85, y: 40, rotate: -2 }}
@@ -104,7 +101,7 @@ export default function HeroSection({ setPage }) {
   return (
     <section ref={ref} style={{ minHeight: "100vh", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "flex-end", paddingBottom: 64 }}>
 
-      {/* ── Background: Vertical columns like CleverMellow ── */}
+      {/* Background: Vertical columns */}
       <div style={{ position: "absolute", inset: 0, display: "flex" }}>
         {COLUMNS.map((col, i) => (
           <motion.div
@@ -129,10 +126,10 @@ export default function HeroSection({ setPage }) {
         <div style={{ position:"absolute", top:0, left:0, right:0, height:200, background:"linear-gradient(to bottom, rgba(10,12,10,0.7), transparent)", pointerEvents:"none" }} />
       </div>
 
-      {/* ── Floating card (top right like CleverMellow) ── */}
+      {/* Floating card top right */}
       <FloatingCard />
 
-      {/* ── Animated scan line ── */}
+      {/* Animated scan line */}
       <motion.div
         style={{
           position:"absolute", left:0, right:0, height:1,
@@ -143,7 +140,7 @@ export default function HeroSection({ setPage }) {
         }}
       />
 
-      {/* ── Content: bottom-left like CleverMellow ── */}
+      {/* Content: bottom-left */}
       <motion.div style={{ y, opacity: op, position:"relative", zIndex:5 }}>
         <div className="container">
 
@@ -170,7 +167,7 @@ export default function HeroSection({ setPage }) {
             <span style={{ fontSize:15, color:"var(--muted)" }}>→ Fixed.</span>
           </motion.div>
 
-          {/* Main headline — large, bottom-left, like CleverMellow */}
+          {/* Main headline — large, bottom-left */}
           <div style={{ overflow:"hidden", marginBottom:4 }}>
             <motion.h1
               className="display"
