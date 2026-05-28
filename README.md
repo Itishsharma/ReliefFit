@@ -1,98 +1,141 @@
-# ReliefFit — Move. Recover. Thrive.
+# ReliefFit (Move · Recover · Thrive)
 
-A full multi-page React + Framer Motion website for body pain relief.
+A modern fitness and recovery web application designed for people who experience body stiffness, muscle pain, posture issues, and mobility problems. ReliefFit helps users improve flexibility, reduce pain, and maintain a healthier routine through guided workouts, recovery exercises, progress tracking, and personalized fitness sections.
 
-## Quick Start
+## Live Demo
+
+🌐 https://relief-fit-pro.vercel.app/
+
+---
+
+# Features
+
+* 🔐 Firebase Google Authentication
+
+  * Secure login using Google Sign-In
+  * Firebase Authentication integration
+  * User session persistence
+
+* 🧍 Body Pain Relief Sections
+
+  * Neck pain exercises
+  * Shoulder mobility routines
+  * Lower back pain relief
+  * Knee strengthening exercises
+  * Wrist and ankle mobility
+  * Full body stretching routines
+
+* 🏋️ Workout & Gym Support
+
+  * Beginner-friendly workouts
+  * Home workout routines
+  * Gym workout plans
+  * Recovery-focused exercises
+  * Warm-up and cooldown guidance
+
+* 📅 Daily Routine Tracking
+
+  * Morning mobility routines
+  * Daily stretching schedules
+  * Habit consistency tracking
+  * Recovery reminders
+
+* 📈 Progress Tracking
+
+  * Workout completion tracking
+  * Pain reduction progress
+  * Flexibility improvement monitoring
+  * Fitness journey history
+
+* 🧘 Mobility & Recovery Focus
+
+  * Designed for people with stiffness and body pain
+  * Recovery-based training system
+  * Posture improvement guidance
+  * Easy-to-follow exercise sections
+
+* 🌙 Modern UI
+
+  * Responsive design
+  * Clean and modern interface
+  * Mobile-friendly experience
+  * Smooth animations and transitions
+
+---
+
+# Tech Stack
+
+* React.js
+* Tailwind CSS
+* Firebase Authentication
+* React Router
+* Vite
+
+---
+
+# Quick Start
+
+## 1. Clone Repository
+
+```bash
+git clone <your-repository-link>
+```
+
+## 2. Move into Project Folder
+
+```bash
+cd relief-fit-pro
+```
+
+## 3. Install Dependencies
 
 ```bash
 npm install
-npm run dev
-# Open http://localhost:5173
 ```
 
-## Build for Production
+## 4. Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# Build for Production
+
 ```bash
 npm run build
+```
+
+---
+
+# Preview Production Build
+
+```bash
 npm run preview
 ```
 
 ---
 
-## Project Structure
+# Deployment
 
-```
-relieffit/
-├── index.html
-├── vite.config.js
-├── package.json
-└── src/
-    ├── main.jsx              ← React entry point
-    ├── App.jsx               ← Root + page router
-    ├── index.css             ← Global styles, CSS vars, animations
-    │
-    ├── pages/
-    │   ├── Home.jsx          ← Hero + Features + Body Picker
-    │   ├── ExercisePage.jsx  ← Exercises for selected body part
-    │   ├── DailyRoutine.jsx  ← Age-wise routine + Indian veg meals
-    │   ├── HomeWorkout.jsx   ← Equipment-free workouts by category
-    │   ├── GymPage.jsx       ← Gym: Warmup→Push→Pull→Legs→Core
-    │   ├── Premium.jsx       ← Pricing + Physio booking form
-    │   └── Progress.jsx      ← Streak tracker + leagues + calendar
-    │
-    ├── components/
-    │   ├── Navbar.jsx        ← Forma AI pill-style floating navbar
-    │   ├── Footer.jsx        ← Short footer
-    │   ├── HeroSection.jsx   ← CleverMellow-style hero (strips + mockup)
-    │   ├── BodyPicker.jsx    ← 8 body part selector cards
-    │   ├── ExerciseCard.jsx  ← Reusable exercise card with photo
-    │   └── FeaturesStrip.jsx ← Animated ticker + stat cards
-    │
-    └── data/
-        ├── exercises.js      ← Indian yoga + exercises per body part (7 each)
-        ├── routine.js        ← Age-wise routines (Under 22 / 23-60 / 60+)
-        ├── diet.js           ← Indian vegetarian meal plan
-        ├── gym.js            ← Gym workouts by category
-        └── homeWorkouts.js   ← Equipment-free workout library
-```
+This project can be deployed easily on:
+
+* Vercel
+* Netlify
+* Firebase Hosting
 
 ---
 
-## Features
+# Project Goal
 
-| Feature | Description |
-|---------|-------------|
-| **Hero** | CleverMellow-style dark bg + vertical color strips + floating browser mockup + parallax scroll |
-| **Navbar** | Forma AI floating pill navbar with BePro button |
-| **Body Picker** | 8 body areas → opens targeted exercises |
-| **Exercises** | 5-7 exercises/yoga per body part, Indian yoga included |
-| **Daily Routine** | Age selector → Under 22 / Working (23-60) / Senior (60+) |
-| **Indian Diet** | 100% vegetarian Indian meal plan (Khichdi, Dal, Sattu, etc.) |
-| **Home Workout** | Tabbed: Full Body / Upper / Lower / Core |
-| **Gym** | Warmup → Push / Pull / Legs / Core with filter tabs |
-| **Progress** | Daily log, streak counter, 7 leagues (Bronze→Conqueror), monthly calendar, bar chart |
-| **Premium** | Forma AI pricing cards + physio booking form with success message |
-| **Animations** | Framer Motion throughout — page enter, scroll parallax, stagger, hover |
+ReliefFit Pro was created to help people who suffer from:
 
-## Leagues System
-| League | Streak Required |
-|--------|----------------|
-| 🥉 Bronze | 1 week |
-| 🥈 Silver | 2 weeks |
-| 🥇 Gold | 4 weeks |
-| 💎 Platinum | 8 weeks |
-| 👑 Crown | 16 weeks |
-| ⚡ Ace | 32 weeks |
-| 🏆 Conqueror | 64 weeks |
+* Body stiffness
+* Muscle tightness
+* Poor posture
+* Joint pain
+* Inactive lifestyle problems
 
-## Tech Stack
-- **React 18** + Vite
-- **Framer Motion** — all animations
-- **CSS Variables** — no UI library
-- **Unsplash** — exercise photos
-- **Google Fonts** — Syne + DM Sans
+The application combines fitness, mobility, recovery, and routine tracking into one platform to support a healthier and pain-free lifestyle.
 
-## Coming Soon (Backend Integration)
-- Gmail login via Google OAuth
-- Progress sync across devices
-- League leaderboards
-- Physiotherapist booking backend
